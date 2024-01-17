@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark's Beetle Emporium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #8db580;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .beetle-card {
+            border: 2px solid #5a7247;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            background-color: #d1e0bf;
+        }
+
+        h2 {
+            color: #5a7247;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #5a7247;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #5a7247;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mark's Beetle Emporium</h1>
+        <p>Nature's Wonders: Rhino and Hercules Beetles</p>
+    </header>
+
+    <section>
+        <div class="beetle-card">
+            <h2>Rhino Beetle</h2>
+            <img src="rhino_beetle_image_url.jpg" alt="Rhino Beetle Image">
+            <p>Explore the majestic Rhino Beetle. Perfect for collectors and enthusiasts.</p>
+            <button onclick="addToCart('Rhino Beetle', 29.99)">Add to Cart</button>
+        </div>
+
+        <div class="beetle-card">
+            <h2>Hercules Beetle</h2>
+            <img src="hercules_beetle_image_url.jpg" alt="Hercules Beetle Image">
+            <p>Behold the mighty Hercules Beetle. A symbol of strength and beauty.</p>
+            <button onclick="addToCart('Hercules Beetle', 39.99)">Add to Cart</button>
+        </div>
+
+        <!-- Add more beetle cards as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mark's Beetle Emporium | Designed by Mark</p>
+    </footer>
+
+    <script>
+        function addToCart(beetleName, price) {
+            alert(beetleName + " added to cart. Total: $" + price);
+            // You can implement additional logic here for cart management or redirection to a checkout page.
+        }
+    </script>
+
+</body>
+
+</html>
